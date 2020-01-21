@@ -13,12 +13,12 @@
   </url>
   
   <url>
-    <loc>https://shoniko.com/posts/post/</loc>
+    <loc>https://shoniko.com/drafts/post/</loc>
     <lastmod>2020-01-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://shoniko.com/posts/</loc>
+    <loc>https://shoniko.com/drafts/</loc>
     <lastmod>2020-01-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -34,6 +34,11 @@
   
   <url>
     <loc>https://shoniko.com/posts/optimize-for-happiness/</loc>
+    <lastmod>2007-04-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shoniko.com/posts/</loc>
     <lastmod>2007-04-15T00:00:00+00:00</lastmod>
   </url>
   
