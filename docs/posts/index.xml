@@ -6,38 +6,15 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Sun, 15 Apr 2007 00:00:00 +0000</lastBuildDate>
+		<lastBuildDate>Thu, 27 Feb 2020 00:00:00 +0000</lastBuildDate>
 		<atom:link href="https://shoniko.com/posts/index.xml" rel="self" type="application/rss+xml" />
 		
 		<item>
-			<title>Optimize for happiness</title>
-			<link>https://shoniko.com/posts/optimize-for-happiness/</link>
-			<pubDate>Sun, 15 Apr 2007 00:00:00 +0000</pubDate>
-			
-			<guid>https://shoniko.com/posts/optimize-for-happiness/</guid>
-			<description>Optimize for happiness  Note: this is a copy of an original post from my Blogspot. It is a very old post, and does not necessary reflect my position now. I just keep it here for future references.
- Recently I came across the idea of happiness optimization. It basicly says something like - do what you like to do - that way the product will be better, and you wil be happier.</description>
-			<content type="html"><![CDATA[<h2 id="optimize-for-happiness">Optimize for happiness</h2>
-<blockquote>
-<p>Note: this is a copy of an original post from my <a href="https://shoniko.blogspot.com/2007/04/optimize-for-happiness.html">Blogspot</a>. It is a very old post, and does not necessary reflect my position now. I just keep it here for future references.</p>
-</blockquote>
-<p>Recently I came across the idea of happiness optimization. It basicly says something like - do what you like to do - that way the product will be better, and you wil be happier.</p>
-<p>I never concidered my self a great programmer. That is true. I never liked programming contests, as I'm not really sure what are those for. I beleive that a good programmer is a happy programmer. And that is it. Which is why I've decided to optimize for happiness.</p>
-<p>Maybe I'm too much motivation driven, but I really think that satisfaction from the job is obligatory.</p>
-<p>I really think that programmers should have life. If you ever read Douglass Coupland's &ldquo;Microsofters&rdquo; I think you'll know what I mean. By life I mean girlfriend, parties, trips, friends, etc. This is mandatory. Ofcourse there are nightly shifts etc, but programmer is a human beeing, and he/she should be able to have fun. Code shouldn't be the meaning of the life. Life should. I don't see the reason to write a good code by sacrificing even the smallest peace of your own life. Maybe opensource commnity will strongly disagree with me on that :).</p>
-<p>I remember some interview with Linus Torwalds, where he was describing his first steps in programming. Oh common - who can think now programming on machine language can be fun? Obviously he can. I remember it was something like: &ldquo;And look, I change this bit - and it moves! wow! cool!&quot;. Didn't we all had a simiar feeling? Don't we all love the possibilities thos machines give us in controlling themselves? Isn't THAT fun? Isn't THAT art or whatever you call it? Isn't THAT why we all are so into it?</p>
-<p>One of the reasons I've started programming was to get more into various audio stuff, as I was keen of producing music. And it was really something - to hear those lines of code producing sound. That was my wow. That is my inspiration. I hate working without inspiration and I actually don'r remember if I ever did. I really don't know what was &ldquo;wow&rdquo; for those programmerв who love Database programming - that is like fata morgana to me. Man is that boring?</p>
-<p>So this is my current position as to what should the work look like - work should be fun. Otherwise it's not yours and you will do a great favor to yourself and others by turning around and looking for something more suitable for you. I'm pretty sure this will change in future, when I will be a bit older and would like to have a static home and job. Right now that is not for me, so I've decided to quit SoftServe and register as an enterpreneur with a state.</p>
-<p>Thanks to all of SoftServe employees for being patient to my weirdness that was bugging them sometimes;).</p>
-]]></content>
-		</item>
-		
-		<item>
 			<title>Intelligent content filtering</title>
-			<link>https://shoniko.com/posts/post/</link>
-			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+			<link>https://shoniko.com/posts/icf/</link>
+			<pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
 			
-			<guid>https://shoniko.com/posts/post/</guid>
+			<guid>https://shoniko.com/posts/icf/</guid>
 			<description>How do you know what a cat is?
 It is certainly something furry, four-legged with a head and tail. But so is a dog. And a mouse. It certainly is something that meows - but some cats do not meow, yet we still agree they are cats. We can even (hopefully) agree that in the picture above there are three cats, even though we see nine legs, do not hear any meows, and see completely different color patterns on each.</description>
 			<content type="html"><![CDATA[<p><img src="/images/cats.jpg" alt="Cat image"></p>
@@ -127,6 +104,29 @@ It is certainly something furry, four-legged with a head and tail. But so is a d
 <p>We may not need all the answers, but we need to have a joint understanding of the important questions.</p>
 <p>I would like to leave you with perhaps the most important question of them all - do we want to enable users to block all the cats on the Web? Do we want CatBlock?</p>
 <p>Let's discuss!</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Optimize for happiness</title>
+			<link>https://shoniko.com/posts/optimize-for-happiness/</link>
+			<pubDate>Sun, 15 Apr 2007 00:00:00 +0000</pubDate>
+			
+			<guid>https://shoniko.com/posts/optimize-for-happiness/</guid>
+			<description>Optimize for happiness  Note: this is a copy of an original post from my Blogspot. It is a very old post, and does not necessary reflect my position now. I just keep it here for future references.
+ Recently I came across the idea of happiness optimization. It basicly says something like - do what you like to do - that way the product will be better, and you wil be happier.</description>
+			<content type="html"><![CDATA[<h2 id="optimize-for-happiness">Optimize for happiness</h2>
+<blockquote>
+<p>Note: this is a copy of an original post from my <a href="https://shoniko.blogspot.com/2007/04/optimize-for-happiness.html">Blogspot</a>. It is a very old post, and does not necessary reflect my position now. I just keep it here for future references.</p>
+</blockquote>
+<p>Recently I came across the idea of happiness optimization. It basicly says something like - do what you like to do - that way the product will be better, and you wil be happier.</p>
+<p>I never concidered my self a great programmer. That is true. I never liked programming contests, as I'm not really sure what are those for. I beleive that a good programmer is a happy programmer. And that is it. Which is why I've decided to optimize for happiness.</p>
+<p>Maybe I'm too much motivation driven, but I really think that satisfaction from the job is obligatory.</p>
+<p>I really think that programmers should have life. If you ever read Douglass Coupland's &ldquo;Microsofters&rdquo; I think you'll know what I mean. By life I mean girlfriend, parties, trips, friends, etc. This is mandatory. Ofcourse there are nightly shifts etc, but programmer is a human beeing, and he/she should be able to have fun. Code shouldn't be the meaning of the life. Life should. I don't see the reason to write a good code by sacrificing even the smallest peace of your own life. Maybe opensource commnity will strongly disagree with me on that :).</p>
+<p>I remember some interview with Linus Torwalds, where he was describing his first steps in programming. Oh common - who can think now programming on machine language can be fun? Obviously he can. I remember it was something like: &ldquo;And look, I change this bit - and it moves! wow! cool!&quot;. Didn't we all had a simiar feeling? Don't we all love the possibilities thos machines give us in controlling themselves? Isn't THAT fun? Isn't THAT art or whatever you call it? Isn't THAT why we all are so into it?</p>
+<p>One of the reasons I've started programming was to get more into various audio stuff, as I was keen of producing music. And it was really something - to hear those lines of code producing sound. That was my wow. That is my inspiration. I hate working without inspiration and I actually don'r remember if I ever did. I really don't know what was &ldquo;wow&rdquo; for those programmerв who love Database programming - that is like fata morgana to me. Man is that boring?</p>
+<p>So this is my current position as to what should the work look like - work should be fun. Otherwise it's not yours and you will do a great favor to yourself and others by turning around and looking for something more suitable for you. I'm pretty sure this will change in future, when I will be a bit older and would like to have a static home and job. Right now that is not for me, so I've decided to quit SoftServe and register as an enterpreneur with a state.</p>
+<p>Thanks to all of SoftServe employees for being patient to my weirdness that was bugging them sometimes;).</p>
 ]]></content>
 		</item>
 		

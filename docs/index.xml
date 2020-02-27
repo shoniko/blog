@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 14 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://shoniko.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Intelligent content filtering</title>
+      <link>https://shoniko.com/posts/icf/</link>
+      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://shoniko.com/posts/icf/</guid>
+      <description>How do you know what a cat is?
+It is certainly something furry, four-legged with a head and tail. But so is a dog. And a mouse. It certainly is something that meows - but some cats do not meow, yet we still agree they are cats. We can even (hopefully) agree that in the picture above there are three cats, even though we see nine legs, do not hear any meows, and see completely different color patterns on each.</description>
+    </item>
     
     <item>
       <title>About me</title>
@@ -38,16 +48,6 @@
       
       <guid>https://shoniko.com/drafts/systematization/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Intelligent content filtering</title>
-      <link>https://shoniko.com/posts/post/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://shoniko.com/posts/post/</guid>
-      <description>How do you know what a cat is?
-It is certainly something furry, four-legged with a head and tail. But so is a dog. And a mouse. It certainly is something that meows - but some cats do not meow, yet we still agree they are cats. We can even (hopefully) agree that in the picture above there are three cats, even though we see nine legs, do not hear any meows, and see completely different color patterns on each.</description>
     </item>
     
   </channel>
