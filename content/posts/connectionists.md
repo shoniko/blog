@@ -2,7 +2,7 @@
 title = 'Intelligent content filtering'
 slug = 'post'
 image = 'images/cats.jpg'
-date = "2020-29-02T00:00:00"
+date = "2020-02-29T00:00:00"
 description = 'About symbolic and connectionist AI and how each approach could be applied for an ad blocking problem.'
 disableComments = false
 +++
