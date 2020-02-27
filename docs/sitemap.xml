@@ -13,16 +13,6 @@
   </url>
   
   <url>
-    <loc>https://shoniko.com/drafts/post/</loc>
-    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://shoniko.com/drafts/</loc>
-    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://shoniko.com/tags/nontech/</loc>
     <lastmod>2007-04-15T00:00:00+00:00</lastmod>
   </url>
@@ -45,6 +35,19 @@
   <url>
     <loc>https://shoniko.com/tags/</loc>
     <lastmod>2007-04-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shoniko.com/drafts/systematization/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shoniko.com/drafts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://shoniko.com/posts/post/</loc>
   </url>
   
 </urlset>

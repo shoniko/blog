@@ -32,5 +32,103 @@
 ]]></content>
 		</item>
 		
+		<item>
+			<title>Intelligent content filtering</title>
+			<link>https://shoniko.com/posts/post/</link>
+			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+			
+			<guid>https://shoniko.com/posts/post/</guid>
+			<description>How do you know what a cat is?
+It is certainly something furry, four-legged with a head and tail. But so is a dog. And a mouse. It certainly is something that meows - but some cats do not meow, yet we still agree they are cats. We can even (hopefully) agree that in the picture above there are three cats, even though we see nine legs, do not hear any meows, and see completely different color patterns on each.</description>
+			<content type="html"><![CDATA[<p><img src="/images/cats.jpg" alt="Cat image"></p>
+<p>How do you know what a cat is?</p>
+<p>It is certainly something furry, four-legged with a head and tail. But so is a dog. And a mouse. It certainly is something that meows - but some cats do not meow, yet we still agree they are cats. We can even (hopefully) agree that in the picture above there are three cats, even though we see nine legs, do not hear any meows, and see completely different color patterns on each.</p>
+<p>The point is this: it is surprisingly difficult to define most of every day things we take for granted. Back in 2017, a couple of researchers wrote a paper where they tried to define what a physical container is. That paper is 60 pages long. One can probably also write a definition of a cat in a similar fashion, but it would be:</p>
+<ul>
+<li>Hilarious</li>
+<li>Very labor intensive</li>
+<li>Not necessarily transferrable to definitions of other entities - like &ldquo;chair&rdquo;.</li>
+</ul>
+<h3 id="so-how-does-this-relate-to-content-filtering-and-what-i-want-to-talk-about-today">So how does this relate to content filtering and what I want to talk about today?</h3>
+<p>Defining a cat using a set of rules would be considered a &ldquo;symbolic&rdquo; approach to AI. Symbolic AI is a method most prominently used in the 90s, and it does have a lot of applications where it works fine.</p>
+<p>However, for reasons described above, it does not really scale to a lot of real world concepts. Thus connectionism (in a form of Deep Learning) came along. In the connectionist world, there is no explicitly defined set of rules, rather there's just a dataset of training examples and an optimization objective which an algorithm should accomplish on its own.</p>
+<p>A connectionist's cat is learned, not hard coded.</p>
+<figure>
+    <img src="/images/SymbolicVsConnectionistApple.png"
+         alt="Symbolic vs connectionist"/> <figcaption>
+            <h4>The concept of &#34;apple&#34; in symbolic and non-symbolic interpretations</h4><p>Source: <a href="https://web.media.mit.edu/~minsky/papers/SymbolicVs.Connectionist.html">https://web.media.mit.edu/~minsky/papers/SymbolicVs.Connectionist.html</a></p>
+        </figcaption>
+</figure>
+
+<hr>
+<h2 id="implications-for-the-web">Implications for the Web</h2>
+<p>Most of the content filtering on the Web today is done using a set of rules (a.k.a filter lists). Even though those rules are rather simplistic for AI standards, it is reasonable to say that this is a symbolic AI. Knowledge is placed there, not learned.</p>
+<p>Symbolic AI systems are also sometimes called &ldquo;expert systems&rdquo;, and I find it interesting to think about an ad blocker as an expert system.</p>
+<p>As the Web evolves, ad blocking filters (rules) become more and more sophisticated and complex. They already went from simplistic rules like <em>&ldquo;hide elements that have feature X&rdquo;</em> to constructs like <em>&ldquo;hide elements which have property X, are nested within element Y with feature T and have a sibling Z with feature R&rdquo;</em>.</p>
+<p>While this does still work in most cases, further evolution could be hard to maintain. On top of that, thanks to <a href="http://adblockplus.org/">Adblock Plus</a> and <a href="https://acceptableads.com/">Acceptable Ads</a>, recent developments of the Web push the advertising to be more subtle and merge with content even more.</p>
+<p>Advertising can look like &ldquo;recommended&rdquo; items:</p>
+<figure>
+    <img src="/images/outbrain.png"
+         alt="Recommended posts by Outbrain"/> <figcaption>
+            <p>Recommended posts by Outbrain</p>
+        </figcaption>
+</figure>
+
+<p>or like content itself:</p>
+<figure>
+    <img src="/images/native_ad.png"
+         alt="Native advertising by Mercedes-Benz in Washington Post: https://www.washingtonpost.com/sf/brand-connect/mercedes/the-rise-of-the-superhuman/"/> <figcaption>
+            <p>Native advertising by Mercedes-Benz in Washington Post: <a href="https://www.washingtonpost.com/sf/brand-connect/mercedes/the-rise-of-the-superhuman/">https://www.washingtonpost.com/sf/brand-connect/mercedes/the-rise-of-the-superhuman/</a></p>
+        </figcaption>
+</figure>
+
+<p>It can also be in the form of Server Side Ad Insertion in media streams, sponsored messages in podcasts and YouTube, a paragraph in an otherwise interesting article, a logo on an image and more.</p>
+<p>Some of these are already not addressable by content blockers - there is no language to write rules for those cases.</p>
+<hr>
+<h2 id="developing-software-20">Developing software 2.0</h2>
+<p>So while an ad blocker as an expert system works, it explicitly tries to limit the scope of what it is. This is because, to list a few:</p>
+<ul>
+<li>The ad blocker only tries to block advertising, and nothing else</li>
+<li>it blocks the same things for everyone - different users, subscribed to same filter lists (expert system) would see the same things blocked</li>
+<li>it does not actually have a concept of an &ldquo;ad&rdquo; internally  - it only works on proxy concepts. If a website or ad delivery method changes, it stops working until someone fixes it</li>
+<li>it constantly needs to increase the rule complexity. A constant game of cat and mouse with publishers who keep circumventing ad blockers causes this</li>
+</ul>
+<p>All of these limitations make perfect sense, and even with them it is extremely challenging to implement an ad blocker properly.</p>
+<p>But let's just wonder for a second what would happen if we removed these restrictions? Yes, this could probably enable identifying advertising using much more subtle cues, but one thing for sure is that it will certainly increase the complexity of the whole ad blocking system. And that is assuming if it would be feasible at all.</p>
+<p><strong>Unless we go away with a concept of ad blocker as a symbolic (expert) system and consider an ad blocker as a connectionist system.</strong></p>
+<p>If we consider dropping explicit rules and rely on compiling datasets into models we would effectively arrive at a Software 2.0 implementation of a content filtering paradigm. Instead of a &ldquo;simple&rdquo; limited Software 1.0 system, we could have a much broader, and flexible, implementation in <a href="https://medium.com/@karpathy/software-2-0-a64152b37c35">Software 2.0</a>.</p>
+<figure>
+    <img src="/images/software20.png"
+         alt="Illustration of Software 2.0 by Andrej Karpathy"/> <figcaption>
+            <p>Illustration of Software 2.0 by Andrej Karpathy</p>
+        </figcaption>
+</figure>
+
+<p>Software 2.0 systems can implement much more complex systems, if only for a fact that in a way it is not humans who write them. A Software 2.0 system can &ldquo;understand&rdquo; what a cat is. Or what the article is about. Or if a specific element on a page was likely paid for (ie advertising).</p>
+<p>Paul Graham, captured a similar sentiment in this old tweet:</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We need a new AdBlock that (a) is less visible to sites and (b) doesn&#39;t rely on fixed strings.</p>&mdash; Paul Graham (@paulg) <a href="https://twitter.com/paulg/status/817300296204427264?ref_src=twsrc%5Etfw">January 6, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<hr>
+<h2 id="how-to-get-there">How to get there?</h2>
+<p><em><strong>Perhaps counter intuitively, real obstacles on a path to a more Software 2.0 content filtering is not a lack of research in machine learning and AI, or some exuberant costs for trainings needed. It is existing Software 1.0.</strong></em></p>
+<p>All of the Web is built around ideas of expert systems. Browsers expect you to provide a list of CSS <strong>rules</strong> to modify how they display things. With <a href="https://developer.chrome.com/extensions/declarativeNetRequest">declarativeNetRequest</a> you are also expected to provide a list of <strong>rules</strong> to decide which URLs to block.</p>
+<p>As the Web matures, browsers take on more and more power over user's online behavior. Since they were originally designed as &ldquo;User Agents&rdquo;, they try to provide some degree of control to their users, by implementing support for all these rules.</p>
+<p>However <strong>would a real User Agent created in 2020 rely on rules to augment the user experience?</strong></p>
+<p>More importantly, what are the chances such a User Agent would be successful in serving the User's interests when there are hundreds of models, trained on lots of user data, by big corporations trying to influence the User?</p>
+<p>The movement to get the benefits of the AI transformation on the Web has already started, with <a href="https://www.tensorflow.org/js">tenslorflow.js</a>, <a href="https://github.com/Microsoft/onnxjs">onnx.js</a>, <a href="https://mil-tokyo.github.io/webdnn/docs/">webdnn</a> and other frameworks enabling machine learning models in browsers. <a href="https://mil-tokyo.github.io/webdnn/docs/">W3C Machine Learning community</a> group is also moving into the same direction, by trying to standardize on a fast and efficient way to run machine learning inference on the Web.</p>
+<p>However merely enabling machine learning predictions is not enough, and a deeper transformation is likely needed. For example, maybe on top of supporting a list of CSS rules browsers could also support a list of machine learning models for augmenting the DOM? This is a change to the fabric of the Web, and WebKit/Safari has already started experimenting with this broader change with <a href="https://webkit.org/blog/7675/intelligent-tracking-prevention/"><strong>Intelligent Tracking Prevention</strong></a>.</p>
+<p>But why stop at cookies and not apply the same kind of thinking to other areas of the Web? Perhaps with enough articulation from an ad blocking industry something like Intelligent Content Blocking can be standardized on? Hopefully a user will just need to decide on a provider.</p>
+<hr>
+<h2 id="eating-the-elephant">Eating the elephant</h2>
+<p>It certainly is not obvious such a thing would be possible yet, but the only way forward I see is to try &ldquo;<a href="https://www.google.com/search?q=how+do+you+eat+an+elephant">eating an elephant one bite at a time</a>&quot;.</p>
+<p>At <a href="https://eyeo.com/">eyeo</a> we have already started using machine learning as a complimentary resource for our ad blocking expert system. However, following this path will likely be ineffective without a community-wide effort to change the inner workings of the Web. And that’s why it is better to start having discussions now.</p>
+<p>Where are we going? What is our future? Is it useful to go beyond ads? Are we enabling content bubbles by allowing people to block specific content? How can we ensure adversarial robustness of such systems?</p>
+<p>We may not need all the answers, but we need to have a joint understanding of the important questions.</p>
+<p>I would like to leave you with perhaps the most important question of them all - do we want to enable users to block all the cats on the Web? Do we want CatBlock?</p>
+<p>Let's discuss!</p>
+]]></content>
+		</item>
+		
 	</channel>
 </rss>
