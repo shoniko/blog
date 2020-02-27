@@ -1,6 +1,5 @@
 +++
 title = 'Intelligent content filtering'
-slug = 'icf'
 image = 'images/cats.jpg'
 date = "2020-02-27T00:00:00"
 description = 'About symbolic and connectionist AI and how each approach could be applied for an ad blocking problem.'
