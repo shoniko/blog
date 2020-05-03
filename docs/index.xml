@@ -7,10 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 27 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://shoniko.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Self-organizations</title>
+      <link>https://shoniko.com/posts/self-organizations/</link>
+      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://shoniko.com/posts/self-organizations/</guid>
+      <description>There are examples of systems with incredible organizational complexity in nature. Birds in flocks, fishes in schools, ants in swarms all seem to just chug away, each doing their little part, and yet together they produce these incredibly complex systems we marvel about.
+They scale really well too. There are some ant super-colonies that have billions of members, like for example the super-colony in Southern Europe, which stretches for 6000km. And some are extremely sophisticated.</description>
+    </item>
+    
+    <item>
+      <title>Right to classify</title>
+      <link>https://shoniko.com/drafts/right-to-classify/</link>
+      <pubDate>Tue, 10 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://shoniko.com/drafts/right-to-classify/</guid>
+      <description>Recently Google has made an announcement that they are dropping the support for automatic gender classification in their AI system.</description>
+    </item>
     
     <item>
       <title>Intelligent content filtering</title>

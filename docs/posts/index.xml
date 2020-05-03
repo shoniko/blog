@@ -6,8 +6,39 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Thu, 27 Feb 2020 00:00:00 +0000</lastBuildDate>
+		<lastBuildDate>Sun, 03 May 2020 00:00:00 +0000</lastBuildDate>
 		<atom:link href="https://shoniko.com/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Self-organizations</title>
+			<link>https://shoniko.com/posts/self-organizations/</link>
+			<pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
+			
+			<guid>https://shoniko.com/posts/self-organizations/</guid>
+			<description>There are examples of systems with incredible organizational complexity in nature. Birds in flocks, fishes in schools, ants in swarms all seem to just chug away, each doing their little part, and yet together they produce these incredibly complex systems we marvel about.
+They scale really well too. There are some ant super-colonies that have billions of members, like for example the super-colony in Southern Europe, which stretches for 6000km. And some are extremely sophisticated.</description>
+			<content type="html"><![CDATA[<p><img src="/images/murmuration.gif" alt="Picture of bird murmuration"></p>
+<p>There are examples of systems with incredible organizational complexity in nature. Birds in flocks, fishes in schools, ants in swarms all seem to just chug away, each doing their little part, and yet together they produce these incredibly complex systems we marvel about.</p>
+<p>They scale really well too. There are some ant super-colonies that have billions of members, like for example the <a href="http://news.bbc.co.uk/earth/hi/earth_news/newsid_8127000/8127519.stm">super-colony in Southern Europe, which stretches for 6000km</a>. </p>
+<p>And some are extremely sophisticated. Like leaf-cutter ants, who are <a href="https://www.youtube.com/watch?v=RH3KYBMpxOU">practicing agriculture</a> and antibiotics for more than 50 million years now, long before humans figured it out. The silly little things purposefully grow fungus! Not an easy task, as you may know if you ever tried to get your own <a href="https://www.refinery29.com/en-ca/2020/03/9606502/sourdough-bread-with-starter-baking-trend">sourdough starter</a>.</p>
+<p>There are some beautiful leadership lessons from insect societies. Let's call it swarm intelligence.</p>
+<p>For example, when a swarm of bees sets out to move somewhere only roughly <a href="https://jeb.biologists.org/content/211/20/3287">5% of bees know where they are actually going</a>. The 5% who do know are the highly energetic &ldquo;streaker bees&rdquo; who constantly fly through the swarm with one goal - to just fly faster in the desired direction than anyone else in other directions.</p>
+<p>Swarm intelligence is curious because it is more than just a wisdom of the smartest individuals. It produces behaviors no single individual is capable of. It is hard to get started, but is very resilient once it is has started.</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Schools of Striped Eel Catfish take turns watching for predators while feeding on the ocean floor.<br><br>Credit: Abyss Dive Center Bali <a href="https://t.co/Pv5sZUYp9T">pic.twitter.com/Pv5sZUYp9T</a></p>&mdash; Wonder of Science (@wonderofscience) <a href="https://twitter.com/wonderofscience/status/1256204397672980480?ref_src=twsrc%5Etfw">May 1, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<h2 id="organizations">Organizations</h2>
+<p>One peculiar feature of self-organizations is that they have no &ldquo;leaders&rdquo;.</p>
+<p>There are lots of cases of human self-organization. The whole concept of &ldquo;free markets&rdquo; is probably the biggest global experiment in that regard. But also perhaps an open source movement and bitcoin concept are all good examples cases of leader-less self-organizations.</p>
+<p>As in animals, human self-organization produces incredibly powerful results. A human swarm intelligence can <a href="https://unanimous.ai/ai-wins-oscars/">predict the winners of Oscars, Kentucky Derby and Trump's 100 days approval rating</a>. It can also give us Linux, defeat Communism, establish a new digital world currency and much more.</p>
+<p>But, as an example of &ldquo;free markets&rdquo; shows - such systems need to be tended to very carefully. They are working well only when they are in an equilibrium, and whoever is looking after them has to be very attuned to all the <a href="https://en.wikipedia.org/wiki/Self-organized_criticality_control">criticalities</a>. Swarms need managers.</p>
+<p>Technology enables an ever increasing connectedness of human organizations. It lends us an opportunity to rely on swarm intelligence way more than before. But it also means that we need to be more mindful than before about the benefits and limits of such structures.</p>
+<p>Management and leadership in a connected world is a bit like a political choice. How much should be left for self-organization? How much do you believe in the Free Market?</p>
+<p>Obviously no right or wrong answers there. But there is one thing that is clear.</p>
+<p>Everyone would benefit from being a bit more like a streaker bee. They are kind of cool.</p>
+<p>Be a bee! 🐝</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Intelligent content filtering</title>
