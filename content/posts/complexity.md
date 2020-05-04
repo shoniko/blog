@@ -3,7 +3,7 @@ title = 'Self-organizations'
 slug = 'self-organizations'
 image = 'images/murmuration.gif'
 date = "2020-05-03T00:00:00"
-description = '.'
+description = 'Complexity, management, ants'
 disableComments = true
 +++
 ![Picture of bird murmuration](/images/murmuration.gif)
@@ -26,7 +26,7 @@ Swarm intelligence is curious because it is more than just a wisdom of the smart
 
 One peculiar feature of self-organizations is that they have no "leaders".
 
-There are lots of cases of human self-organization. The whole concept of "free markets" is probably the biggest global experiment in that regard. But also perhaps an open source movement and bitcoin concept are all good examples cases of leader-less self-organizations.
+There are lots of cases of human self-organization. The whole concept of "free markets" is probably the biggest global experiment in that regard. But also perhaps an open source movement and bitcoin are all good examples cases of leader-less self-organizations.
 
 As in animals, human self-organization produces incredibly powerful results. A human swarm intelligence can [predict the winners of Oscars, Kentucky Derby and Trump's 100 days approval rating](https://unanimous.ai/ai-wins-oscars/). It can also give us Linux, defeat Communism, establish a new digital world currency and much more.
 
