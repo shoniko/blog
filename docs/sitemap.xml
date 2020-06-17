@@ -53,6 +53,16 @@
   </url>
   
   <url>
+    <loc>https://shoniko.com/posts/shoniko/blocking-the-face-of-donald-trump-on-the-web-using-ai-a39f6ad7f69e/</loc>
+    <lastmod>2018-07-10T19:39:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shoniko.com/posts/shoniko/towards-more-intelligent-ad-blocking-on-the-web-9f67bf2a12b5/</loc>
+    <lastmod>2018-06-24T21:30:22+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://shoniko.com/posts/optimize-for-happiness/</loc>
     <lastmod>2007-04-15T00:00:00+00:00</lastmod>
   </url>
@@ -60,6 +70,10 @@
   <url>
     <loc>https://shoniko.com/drafts/systematization/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shoniko.com/posts/draft_ml-meetup-7c7fbb380489/</loc>
   </url>
   
 </urlset>

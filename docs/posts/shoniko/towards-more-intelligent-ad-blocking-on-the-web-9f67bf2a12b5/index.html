@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="Towards more intelligent ad blocking on the web">
+<meta itemprop="description" content="Ad blockers of today rely heavily on a community of filter authors, who are continuously adding, changing and removing the filters which…">
+<meta itemprop="datePublished" content="2018-06-24T21:30:22&#43;00:00" />
+<meta itemprop="dateModified" content="2018-06-24T21:30:22&#43;00:00" />
+<meta itemprop="wordCount" content="1546">
+
+
+
+<meta itemprop="keywords" content="" /><meta property="og:title" content="Towards more intelligent ad blocking on the web" />
+<meta property="og:description" content="Ad blockers of today rely heavily on a community of filter authors, who are continuously adding, changing and removing the filters which…" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shoniko.com/posts/shoniko/towards-more-intelligent-ad-blocking-on-the-web-9f67bf2a12b5/" />
+<meta property="article:published_time" content="2018-06-24T21:30:22+00:00" />
+<meta property="article:modified_time" content="2018-06-24T21:30:22+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Towards more intelligent ad blocking on the web"/>
+<meta name="twitter:description" content="Ad blockers of today rely heavily on a community of filter authors, who are continuously adding, changing and removing the filters which…"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>Towards more intelligent ad blocking on the web</title>
+	<link rel="stylesheet" href="https://shoniko.com/css/style.min.657bcb7af31123e4156b1a3d2ff60a636717e54ead74f882136b5114cf72b55e.css" integrity="sha256-ZXvLevMRI+QVaxo9L/YKY2cX5U6tdPiCE2tRFM9ytV4=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://shoniko.com">Oleksandr Paraska</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://shoniko.com/posts/">Posts</a>
+				<a href="https://shoniko.com/about-me/">About</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://twitter.com/shoniko" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://gitlab.com/shoniko" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="https://www.linkedin.com/in/shoniko/" target="_blank" rel="noopener me" title="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a href="mailto:shoniko@gmail.com" target="_blank" rel="noopener me" title="Email"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://shoniko.com/posts/">Posts</a></li>
+			<li><a href="https://shoniko.com/about-me/">About</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Jun 24, 2018</span></div>
+				<h1>Towards more intelligent ad blocking on the web</h1>
+			</header>
+			<div class="content">
+				<p>Ad blockers of today rely heavily on a community of filter authors, who are continuously adding, changing and removing the filters which define what is blocked or what is considered an ad. It is quite a laborious task, often requiring constantly visiting the same websites again and again, just to make sure the stuff that is supposed to be blocked gets blocked, and stuff that should not — doesn’t.</p>
+<p>To alleviate some of the pain points of this process it would be useful to automate some routine parts, while keeping human authors doing what they do best — judging what constitutes an ad.</p>
+<p>A recent <a href="https://adblockplus.org/blog/ping-pong-with-facebook">arms race</a> between Adblock Plus and Facebook prompted a <a href="http://randomwalker.info/publications/ad-blocking-framework-techniques.pdf">research paper</a> at Princeton, which suggested the concept of a “perceptual ad blocker.” And while Adblock Plus is still able to block Facebook ads today, the concept is interesting to explore. Here is a quote from the paper.</p>
+<blockquote>
+<p>We rely on the key insight that ads are legally required to be clearly recognizable by humans. To make the method robust, we deliberately ignore all signals invisible to humans, including URLs and markup. Instead we consider visual and behavioral information</p>
+</blockquote>
+<p>Another key insight comes from one of the most influential minds in Artificial Intelligence and Deep Learning, Andrew Ng.</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Pretty much anything that a normal person can do in &lt;1 sec, we can now automate with AI.</p>&mdash; Andrew Ng (@AndrewYNg) <a href="https://twitter.com/AndrewYNg/status/788548053745569792?ref_src=twsrc%5Etfw">October 19, 2016</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Since, generally speaking, a normal person can distinguish an ad from a non-ad in less than one second, it makes sense to explore how we can harness AI to help the filter list community.</p>
+<p>To mimic the way humans see the web we’ll be looking at screenshots of websites, not actual code. The thinking is that whatever happens in the code, the end result is presented to a human user visually; so that’s where we should operate.</p>
+<p>With that background, the problem becomes clearer. Given merely a screenshot of a website, identify where the ads on that screenshot are. If we are able to do that, then we’ll be able to automatically crawl the web, detect ads automatically on sites where such an approach is possible, and, in parallel, flag websites if they should be checked by human contributors.</p>
+<p>This is known as an “object detection” task in the machine learning world. There are multiple algorithms to solve this, including:</p>
+<ul>
+<li><a href="https://arxiv.org/abs/1311.2524"><strong>R-CNN</strong>: Region-based Convolutional Neural Networks</a></li>
+<li><a href="https://arxiv.org/abs/1512.02325"><strong>SSD</strong>: Single Shot Detection</a></li>
+<li><a href="https://arxiv.org/pdf/1612.08242.pdf"><strong>YOLO</strong>: You Only Look Once</a></li>
+</ul>
+<figure>
+    <img src="/images/1__qHgdrIphDggxi3SfDWhlEw.png"
+         alt="Table of mAP results from YOLO9000"/> <figcaption>
+            <p>Source: YOLO9000 paper <a href="https://arxiv.org/pdf/1612.08242.pdf">https://arxiv.org/pdf/1612.08242.pdf</a></p>
+        </figcaption>
+</figure>
+
+<p>Mean average precision (mAP) is generally agreed to be a good metric for performance of an object detection algorithm. There is a great explanation of what it is <a href="https://medium.com/@jonathan_hui/map-mean-average-precision-for-object-detection-45c121a31173">here</a>, but essentially it is a metric of how closely predicted bounding boxes come to expected bounding boxes. Based on this metric, and the speed of inference, the updated versions of You Only Look Once (YOLO) are widely considered the most efficient object detection algorithms. That is why we decided to use YOLO in this case.</p>
+<p>However, screenshots of web pages are very specific data, and it would be beneficial to the research to compare results of different algorithms on this specific task. The results of this will be released in follow up posts. We will also use different feature extractors in YOLOv2 implementation to get a better intuition on what different kinds of networks would learn.</p>
+<p>As YOLO is a <a href="https://en.wikipedia.org/wiki/Supervised_learning">supervised machine learning</a> algorithm, to train our model we would need a list of screenshots, annotated with bounding boxes for ads. Luckily, we can generate as many screenshots of websites as needed, and thanks to all the work of Easylist authors we can automatically generate the annotations too. As a proof-of-concept, we’ll be using the above mentioned ads on Facebook.</p>
+<figure>
+    <img src="/images/1__XYW8MkEElxPniLfZbGzzqA.png"
+         alt="A diagram of Facebook"/> <figcaption>
+            <p>Source: <a href="https://getpayever.com/facebook-ads-for-beginners-guide/">https://getpayever.com/facebook-ads-for-beginners-guide/</a></p>
+        </figcaption>
+</figure>
+
+<p>Facebook ads are an example of native ads, and in this special case both the content and ads are controlled by the same entity. To get training data from Facebook we’ll implement a simple script that will instruct the browser to continuously scroll a Facebook feed, make screenshots and write annotations. Using a WebDriver API we can use the <a href="http://webdriver.io/api/protocol/screenshot.html">screenshot</a> function to produce a training image, and <a href="http://webdriver.io/api/property/getLocation.html">getLocation</a> to retrieve the element’s bounding box. Immediately a few caveats pop up:</p>
+<ul>
+<li>we have to be mindful about the screen resolution <a href="https://en.wikipedia.org/wiki/Dots_per_inch">dpi</a>, as browsers report element locations in native web page pixels, and screenshots are in end-user pixels.</li>
+<li>Facebook has to be continuously scrolled, meaning that the reported locations of elements must be adjusted by `_window.pageYOffset`._</li>
+<li>Turns out Facebook is not endless!</li>
+</ul>
+<figure>
+    <img src="/images/1__IZeXRYcGAmC1SYkrpCrqPg.png"
+         alt="A visualization of the end of Facebook"/> <figcaption>
+            <p>The end of Facebook</p>
+        </figcaption>
+</figure>
+
+<p>One important thing to consider is that Facebook news feed ads look very much like regular entries, with very few distinguishing characteristics of their own. To make sure our neural network does not treat regular news feed entries as ads we have to show it examples of both ads and non-ads. So our script has to capture boxes of three classes:</p>
+<ul>
+<li>a news feed item,</li>
+<li>a news feed ad and</li>
+<li>a side ad to the right of the news feed.</li>
+</ul>
+<p>After letting the script crawl Facebook for a few hours, we’ll end-up with a list of images and their annotations. However, because all of the screenshots are of the same size and ads are roughly in same location in each screenshot, we risk having the neural network overfitting to the location, rather than other ad features. We try to overcome that by running a script in a browser with different dimensions.</p>
+<p>Implementing YOLOv2 from scratch is a pretty involved task, but luckily there are already implementations for various frameworks. For example, TensorFlow has a <a href="https://github.com/tensorflow/models/tree/master/research/object_detection">research section with object detection API</a> built in. Nvidia DIGITS has a <a href="https://github.com/NVIDIA/DIGITS/tree/master/examples/object-detection">UI layer for object detection</a> as well. Microsoft has just released an <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/home">object detection extension for their Custom Vision API</a>. For this exercise, however, for research purposes we will rely on another open source <a href="https://github.com/experiencor/keras-yolo2">implementation of YOLOv2 for Keras</a>.</p>
+<p>For our implementation, the annotations are simple XML files, which are located in a separate directory from training screenshots. For proof of concept, we have produced a data set of 7948 screenshots. In the data set there are 15902 examples of a news feed item, 1502 examples of a news feed ad and 3494 examples of a side ad. We can then divide the data set into 3 groups — training, cross-validation and test set; approximately 80%, 10%, 10%, respectively. With this training set up we are achieving a 0.93 mAP score with YOLOv2 network with 608x608 input data. 0.9883 for news feed items, 0.9234 for news feed ads and 0.8919 for side ads. The scores are quite high, as the generated data is very homogenous. So in a way we are over-fitting to synthetic data, but it is fine for the defined task.</p>
+<p>Such a set up produces fairly good recall, and we can identify where the objects are:</p>
+<p><img src="img%5C1__zz76WjN4rNNy0RVB4tZHAA.png" alt="">
+<img src="img%5C1__hWZ2W3DC__ummbvCt1a2L5A.png" alt=""></p>
+<p>It also looks like we are able to figure out some features of ads vs non-ads, but more work in this area can certainly be done. It would also be interesting to compare the model performance with human reference, as Facebook ads are masked as native content.</p>
+<p><img src="img%5C1____C8H3t__KbOjA8__K3Gesjew.png" alt=""></p>
+<p>For some intuition of what the model learned, here is a recorded video of the trained model performing inference (not real time):</p>
+<p>Running inference on every frame</p>
+<p>As expected, it looks like a full news feed item, with “Suggested post” on top is classified as an ad fairly reliably. It doesn’t look like the model has picked up on “Sponsored” text yet though. This is something we can focus for future research.</p>
+<p>We have set out to train a model to detect Facebook ads. So far we have been training and evaluating on `synthetic` data, produced by a script scrolling the Facebook news feed. We got some fairly good results, but we also wanted to make sure our model can generalize well, so that what the model considers an ad would approximate very closely what people consider an ad. We thought it would be helpful to involve the community here. For that we have <a href="https://github.com/shoniko/keras-yolo2/blob/dacd7a089f09a9735e0aad4fa61d50fcce19098d/convert_keras_to_tf.py">exported</a> the trained Keras model to a saved TensorFlow model (.pb) and set up a TensorFlow Serving instance to serve it. We have also created a <a href="https://github.com/shoniko/adblock-ai-backend/tree/fa819a9050429345285415b665f04788c9461325/facebook-bot">Facebook bot</a> and wrapped it inside a Flask server, hosted using Gunicorn. The Bot accepts screenshots from users, prepares them for the TensorFlow graph and passes them to the <a href="https://github.com/shoniko/adblock-ai-backend/blob/fa819a9050429345285415b665f04788c9461325/inference/Dockerfile">TensorFlow Serving instance</a>. We orchestrate our setup using <a href="https://github.com/shoniko/adblock-ai-backend/blob/fa819a9050429345285415b665f04788c9461325/docker-compose.yml">docker-compose</a>. All code is available <a href="https://github.com/shoniko/facebook-ad-detector">here</a>. We anticipate the Bot will not be as good on user submitted screenshot data, as it is inherently different in nature. And also, there are apparently <a href="https://www.entrepreneur.com/article/294242">10 000 versions of Facebook</a> on the Web. However we plan to retrain our model with a dataset of user submitted screenshots and make it better over time.</p>
+<p>This is only preliminary research on possible uses of Machine Learning methods for making the Web better. While there’s a lot more to try, the approach described here can already help the filter list community. We can now set up an automated crawling process to go on pages and render them to see exactly what the user would see. Based on those renders we can make decisions if a human filter list author should check the page.</p>
+
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>1546 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2018-06-24 23:30 &#43;0200</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="next-post" href="https://shoniko.com/posts/shoniko/blocking-the-face-of-donald-trump-on-the-web-using-ai-a39f6ad7f69e/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>Blocking the face of Donald Trump on the Web using AI</span>
+			</a>
+			<a class="prev-post" href="https://shoniko.com/posts/optimize-for-happiness/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>Optimize for happiness</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2020 <a href="https://shoniko.com">Oleksandr Paraska</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://shoniko.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://shoniko.com/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>

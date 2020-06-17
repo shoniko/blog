@@ -28,7 +28,9 @@ They scale really well too. There are some ant super-colonies that have billions
       <pubDate>Tue, 10 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://shoniko.com/drafts/right-to-classify/</guid>
-      <description>Recently Google has made an announcement that they are dropping the support for automatic gender classification in their AI system.</description>
+      <description>Recently Google has made an announcement that they are dropping the support for automatic gender classification in their AI system.
+Who should be allowed to categorize you? I think the answer consists of two parts:
+ Until we make much more progress in AI it should not be possible to categorize something un-categorizable, ie things that have not essence.  TODO: But what about cats??</description>
     </item>
     
     <item>
@@ -51,6 +53,26 @@ It is certainly something furry, four-legged with a head and tail. But so is a d
     </item>
     
     <item>
+      <title>Blocking the face of Donald Trump on the Web using AI</title>
+      <link>https://shoniko.com/posts/shoniko/blocking-the-face-of-donald-trump-on-the-web-using-ai-a39f6ad7f69e/</link>
+      <pubDate>Tue, 10 Jul 2018 19:39:29 +0000</pubDate>
+      
+      <guid>https://shoniko.com/posts/shoniko/blocking-the-face-of-donald-trump-on-the-web-using-ai-a39f6ad7f69e/</guid>
+      <description>Recently my employer Adblock Plus was having an annual Summer Team Week. Being a mostly distributed company it is a great opportunity to socialize and meet people you work with, but never get to see in real life.
+As it often happens in these cases after some amount of social activities I overheard someone jokingly suggesting that us being a company which has this goal of “putting you in charge of a fair and profitable Web”, we can just block the face of Donald Trump using some machine learning techniques.</description>
+    </item>
+    
+    <item>
+      <title>Towards more intelligent ad blocking on the web</title>
+      <link>https://shoniko.com/posts/shoniko/towards-more-intelligent-ad-blocking-on-the-web-9f67bf2a12b5/</link>
+      <pubDate>Sun, 24 Jun 2018 21:30:22 +0000</pubDate>
+      
+      <guid>https://shoniko.com/posts/shoniko/towards-more-intelligent-ad-blocking-on-the-web-9f67bf2a12b5/</guid>
+      <description>Ad blockers of today rely heavily on a community of filter authors, who are continuously adding, changing and removing the filters which define what is blocked or what is considered an ad. It is quite a laborious task, often requiring constantly visiting the same websites again and again, just to make sure the stuff that is supposed to be blocked gets blocked, and stuff that should not — doesn’t.
+To alleviate some of the pain points of this process it would be useful to automate some routine parts, while keeping human authors doing what they do best — judging what constitutes an ad.</description>
+    </item>
+    
+    <item>
       <title>Optimize for happiness</title>
       <link>https://shoniko.com/posts/optimize-for-happiness/</link>
       <pubDate>Sun, 15 Apr 2007 00:00:00 +0000</pubDate>
@@ -67,6 +89,16 @@ It is certainly something furry, four-legged with a head and tail. But so is a d
       
       <guid>https://shoniko.com/drafts/systematization/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>ML meetup</title>
+      <link>https://shoniko.com/posts/draft_ml-meetup-7c7fbb380489/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shoniko.com/posts/draft_ml-meetup-7c7fbb380489/</guid>
+      <description>eyeo is proud to host a Cologne AI and Machine Learning meetup. This meetup is focused on AI explainability and of course with our exploration of the use of machine learning for ad blocking we are very interested in the topic as well.
+Explainabile AI (XAI) is an old problem of the field, but with recent advances mostly in Deep Learning it became much more prominent. After all people do want to know why a medical AI made this diagnosis as opposed to another one, or why did the autonomous vehicle take that specific action.</description>
     </item>
     
   </channel>
