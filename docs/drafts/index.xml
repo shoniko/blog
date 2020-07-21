@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 10 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://shoniko.com/drafts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Aristotle and innovation</title>
+      <link>https://shoniko.com/drafts/aristotle-and-innovation/</link>
+      <pubDate>Thu, 18 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://shoniko.com/drafts/aristotle-and-innovation/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Right to classify</title>
@@ -18,9 +27,9 @@
       <pubDate>Tue, 10 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://shoniko.com/drafts/right-to-classify/</guid>
-      <description>Recently Google has made an announcement that they are dropping the support for automatic gender classification in their AI system.
-Who should be allowed to categorize you? I think the answer consists of two parts:
- Until we make much more progress in AI it should not be possible to categorize something un-categorizable, ie things that have not essence.  TODO: But what about cats??</description>
+      <description>If I sign myself Jean-Paul Sartre it is not the same thing as if I sign myself Jean-Paul Sartre, Nobel Prizewinner.
+  When I joined the company I currently work at I was a privacy noob. Little did I know that Privacy wars will be the next big thing in the Big Tech.
+There is a prevailing view that any kind of Data is a kind of commodity.</description>
     </item>
     
     <item>

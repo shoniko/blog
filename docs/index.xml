@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 03 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://shoniko.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Aristotle and innovation</title>
+      <link>https://shoniko.com/drafts/aristotle-and-innovation/</link>
+      <pubDate>Thu, 18 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://shoniko.com/drafts/aristotle-and-innovation/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Self-organizations</title>
@@ -28,9 +37,9 @@ They scale really well too. There are some ant super-colonies that have billions
       <pubDate>Tue, 10 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://shoniko.com/drafts/right-to-classify/</guid>
-      <description>Recently Google has made an announcement that they are dropping the support for automatic gender classification in their AI system.
-Who should be allowed to categorize you? I think the answer consists of two parts:
- Until we make much more progress in AI it should not be possible to categorize something un-categorizable, ie things that have not essence.  TODO: But what about cats??</description>
+      <description>If I sign myself Jean-Paul Sartre it is not the same thing as if I sign myself Jean-Paul Sartre, Nobel Prizewinner.
+  When I joined the company I currently work at I was a privacy noob. Little did I know that Privacy wars will be the next big thing in the Big Tech.
+There is a prevailing view that any kind of Data is a kind of commodity.</description>
     </item>
     
     <item>
@@ -50,6 +59,16 @@ It is certainly something furry, four-legged with a head and tail. But so is a d
       
       <guid>https://shoniko.com/about-me/</guid>
       <description>Hi! My name is Oleksandr Paraska. Currently I work at eyeo, exploring different ways you can apply progress in machine learning to ad blocking. My wife, my son and I currently live in Bonn, Germany.</description>
+    </item>
+    
+    <item>
+      <title>ML meetup</title>
+      <link>https://shoniko.com/posts/mlmeatup/</link>
+      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shoniko.com/posts/mlmeatup/</guid>
+      <description>eyeo is proud to host a Cologne AI and Machine Learning meetup. This meetup is focused on AI explainability and of course with our exploration of the use of machine learning for ad blocking we are very interested in the topic as well.
+Explainabile AI (XAI) is an old problem of the field, but with recent advances mostly in Deep Learning it became much more prominent. After all people do want to know why a medical AI made this diagnosis as opposed to another one, or why did the autonomous vehicle take that specific action.</description>
     </item>
     
     <item>
@@ -89,16 +108,6 @@ To alleviate some of the pain points of this process it would be useful to autom
       
       <guid>https://shoniko.com/drafts/systematization/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>ML meetup</title>
-      <link>https://shoniko.com/posts/draft_ml-meetup-7c7fbb380489/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://shoniko.com/posts/draft_ml-meetup-7c7fbb380489/</guid>
-      <description>eyeo is proud to host a Cologne AI and Machine Learning meetup. This meetup is focused on AI explainability and of course with our exploration of the use of machine learning for ad blocking we are very interested in the topic as well.
-Explainabile AI (XAI) is an old problem of the field, but with recent advances mostly in Deep Learning it became much more prominent. After all people do want to know why a medical AI made this diagnosis as opposed to another one, or why did the autonomous vehicle take that specific action.</description>
     </item>
     
   </channel>

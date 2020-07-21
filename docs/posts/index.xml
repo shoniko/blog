@@ -139,6 +139,22 @@ It is certainly something furry, four-legged with a head and tail. But so is a d
 		</item>
 		
 		<item>
+			<title>ML meetup</title>
+			<link>https://shoniko.com/posts/mlmeatup/</link>
+			<pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+			
+			<guid>https://shoniko.com/posts/mlmeatup/</guid>
+			<description>eyeo is proud to host a Cologne AI and Machine Learning meetup. This meetup is focused on AI explainability and of course with our exploration of the use of machine learning for ad blocking we are very interested in the topic as well.
+Explainabile AI (XAI) is an old problem of the field, but with recent advances mostly in Deep Learning it became much more prominent. After all people do want to know why a medical AI made this diagnosis as opposed to another one, or why did the autonomous vehicle take that specific action.</description>
+			<content type="html"><![CDATA[<p>eyeo is proud to host a <a href="https://www.meetup.com/Cologne-AI-and-Machine-Learning-Meetup/events/258559150/">Cologne AI and Machine Learning meetup</a>. This meetup is focused on AI explainability and of course with our exploration of the use of machine learning for ad blocking we are very interested in the topic as well.</p>
+<p>Explainabile AI (XAI) is an old problem of the field, but with recent advances mostly in Deep Learning it became much more prominent. After all people do want to know why a medical AI made this diagnosis as opposed to another one, or why did the autonomous vehicle take that specific action.</p>
+<p>In the context of ad blocking, however, explainable AI question also quickly gains a whole lot of social connotations. If it’s an AI that’s making decisions about what to block, instead of a filter list community, we need to understand how that AI works so that we use it responsibly.</p>
+<p>We want to know why our models make decisions they make, because we need to have them aligned with the user’s choice, which is key to everything we do. However, perhaps unsurprisingly, there are adversaries on the Web who are extremely motivated to bypass the user’s choice, aiming to trick the AI and force their ads on users. From that perspective we need to make sure our models are also robust against adversarial attacks.</p>
+<p>On the meetup we will talk about how we see the questions of explainability and adversarial robustness as two sides of the same coin. We will talk about our experiment Sentinel and give some examples from the trenches about adversarial robustness.</p>
+]]></content>
+		</item>
+		
+		<item>
 			<title>Blocking the face of Donald Trump on the Web using AI</title>
 			<link>https://shoniko.com/posts/shoniko/blocking-the-face-of-donald-trump-on-the-web-using-ai-a39f6ad7f69e/</link>
 			<pubDate>Tue, 10 Jul 2018 19:39:29 +0000</pubDate>
@@ -255,22 +271,6 @@ To alleviate some of the pain points of this process it would be useful to autom
 <p>One of the reasons I've started programming was to get more into various audio stuff, as I was keen of producing music. And it was really something - to hear those lines of code producing sound. That was my wow. That is my inspiration. I hate working without inspiration and I actually don'r remember if I ever did. I really don't know what was &ldquo;wow&rdquo; for those programmerв who love Database programming - that is like fata morgana to me. Man is that boring?</p>
 <p>So this is my current position as to what should the work look like - work should be fun. Otherwise it's not yours and you will do a great favor to yourself and others by turning around and looking for something more suitable for you. I'm pretty sure this will change in future, when I will be a bit older and would like to have a static home and job. Right now that is not for me, so I've decided to quit SoftServe and register as an enterpreneur with a state.</p>
 <p>Thanks to all of SoftServe employees for being patient to my weirdness that was bugging them sometimes;).</p>
-]]></content>
-		</item>
-		
-		<item>
-			<title>ML meetup</title>
-			<link>https://shoniko.com/posts/draft_ml-meetup-7c7fbb380489/</link>
-			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-			
-			<guid>https://shoniko.com/posts/draft_ml-meetup-7c7fbb380489/</guid>
-			<description>eyeo is proud to host a Cologne AI and Machine Learning meetup. This meetup is focused on AI explainability and of course with our exploration of the use of machine learning for ad blocking we are very interested in the topic as well.
-Explainabile AI (XAI) is an old problem of the field, but with recent advances mostly in Deep Learning it became much more prominent. After all people do want to know why a medical AI made this diagnosis as opposed to another one, or why did the autonomous vehicle take that specific action.</description>
-			<content type="html"><![CDATA[<p>eyeo is proud to host a <a href="https://www.meetup.com/Cologne-AI-and-Machine-Learning-Meetup/events/258559150/">Cologne AI and Machine Learning meetup</a>. This meetup is focused on AI explainability and of course with our exploration of the use of machine learning for ad blocking we are very interested in the topic as well.</p>
-<p>Explainabile AI (XAI) is an old problem of the field, but with recent advances mostly in Deep Learning it became much more prominent. After all people do want to know why a medical AI made this diagnosis as opposed to another one, or why did the autonomous vehicle take that specific action.</p>
-<p>In the context of ad blocking, however, explainable AI question also quickly gains a whole lot of social connotations. If it’s an AI that’s making decisions about what to block, instead of a filter list community, we need to understand how that AI works so that we use it responsibly.</p>
-<p>We want to know why our models make decisions they make, because we need to have them aligned with the user’s choice, which is key to everything we do. However, perhaps unsurprisingly, there are adversaries on the Web who are extremely motivated to bypass the user’s choice, aiming to trick the AI and force their ads on users. From that perspective we need to make sure our models are also robust against adversarial attacks.</p>
-<p>On the meetup we will talk about how we see the questions of explainability and adversarial robustness as two sides of the same coin. We will talk about our experiment Sentinel and give some examples from the trenches about adversarial robustness.</p>
 ]]></content>
 		</item>
 		
