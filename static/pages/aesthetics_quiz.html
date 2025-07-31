@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aesthetic Self-Assessment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+    }
+    .question {
+      background: white;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      margin: 2rem auto;
+      max-width: 800px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    .slider {
+      width: 100%;
+    }
+    .labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      color: #666;
+    }
+    .images {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      margin: 1rem 0;
+    }
+    .images img {
+      width: 48%;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    button {
+      display: block;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      background: #333;
+      color: white;
+      cursor: pointer;
+    }
+    #result {
+      text-align: center;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Aesthetic Self-Assessment</h1>
+
+  <form id="quizForm">
+    <div class="question">
+      <h2>1. Order vs. Chaos</h2>
+      <p>Which experience speaks to your sense of beauty?</p>
+      <div class="images">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/The_Parthenon_in_Athens.jpg" alt="Order - The Parthenon">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Mural_del_%22Guernica%22_de_Picasso.jpg/2560px-Mural_del_%22Guernica%22_de_Picasso.jpg" alt="Chaos - Picasso's Guernica">
+      </div>
+      <input type="range" min="1" max="10" value="5" class="slider" name="order">
+      <div class="labels"><span>Order</span><span>Chaos</span></div>
+    </div>
+
+    <div class="question">
+      <h2>2. Emotion vs. Detachment</h2>
+      <p>Which aesthetic tone draws you in more?</p>
+      <div class="images">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Jean-Baptiste_Greuze_001.jpg/1024px-Jean-Baptiste_Greuze_001.jpg" alt="Emotion">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Piet_Mondrian%2C_1942_-_Broadway_Boogie_Woogie.jpg/1280px-Piet_Mondrian%2C_1942_-_Broadway_Boogie_Woogie.jpg" alt="Detachment">
+      </div>
+      <input type="range" min="1" max="10" value="5" class="slider" name="emotion">
+      <div class="labels"><span>Emotion</span><span>Detachment</span></div>
+    </div>
+
+    <div class="question">
+      <h2>3. Meaning vs. Absurdity</h2>
+      <p>Which kind of interpretation appeals to you more?</p>
+      <div class="images">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Creation_of_Adam_Michelangelo.jpg" alt="Meaning - Michelangelo">
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg" alt="Absurdity - This is not a pipe">
+      </div>
+      <input type="range" min="1" max="10" value="5" class="slider" name="meaning">
+      <div class="labels"><span>Meaning</span><span>Absurdity</span></div>
+    </div>
+
+    <div class="question">
+      <h2>4. Tradition vs. Transgression</h2>
+      <p>Do you favor artistic continuity or radical breaks?</p>
+      <div class="images">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" alt="Tradition - Mona Lisa">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Marcel_Duchamp%2C_1917%2C_Fountain%2C_photograph_by_Alfred_Stieglitz.jpg/1024px-Marcel_Duchamp%2C_1917%2C_Fountain%2C_photograph_by_Alfred_Stieglitz.jpg" alt="Transgression - Duchamp's Fountain">
+      </div>
+      <input type="range" min="1" max="10" value="5" class="slider" name="tradition">
+      <div class="labels"><span>Tradition</span><span>Transgression</span></div>
+    </div>
+
+    <div class="question">
+      <h2>5. Unity vs. Fragmentation</h2>
+      <p>Do you gravitate toward harmony or multiplicity?</p>
+      <div class="images">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Claude_Monet_Seerosen_um_1915_Neue_Pinakothek-4.jpg/500px-Claude_Monet_Seerosen_um_1915_Neue_Pinakothek-4.jpg" alt="Unity - Monet">
+        <img src="https://artofcollage.wordpress.com/wp-content/uploads/2012/04/squares-arranged-black-and-white1.jpg?w=416" alt="Fragmentation - Arp">
+      </div>
+      <input type="range" min="1" max="10" value="5" class="slider" name="unity">
+      <div class="labels"><span>Unity</span><span>Fragmentation</span></div>
+    </div>
+
+    <button type="button" onclick="submitQuiz()">Submit</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    function submitQuiz() {
+      const form = document.getElementById('quizForm');
+      const formData = new FormData(form);
+      let output = '<h2>Your Aesthetic Profile</h2><ul>';
+      for (const [key, value] of formData.entries()) {
+        output += `<li><strong>${key}</strong>: ${value}</li>`;
+      }
+      output += '</ul>';
+      document.getElementById('result').innerHTML = output;
+    }
+  </script>
+</body>
+</html>
