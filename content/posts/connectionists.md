@@ -76,7 +76,7 @@ Software 2.0 systems can implement much more complex systems, if only for a fact
 
 Paul Graham, captured a similar sentiment in this old tweet: 
 
-{{< tweet 817300296204427264 >}}
+{{< tweet id="817300296204427264" >}}
 
 ---
 

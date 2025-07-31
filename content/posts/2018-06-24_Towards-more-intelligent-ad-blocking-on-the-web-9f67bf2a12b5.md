@@ -19,7 +19,7 @@ A recent [arms race](https://adblockplus.org/blog/ping-pong-with-facebook) betwe
 
 Another key insight comes from one of the most influential minds in Artificial Intelligence and Deep Learning, Andrew Ng.
 
-{{< tweet 788548053745569792 >}}
+{{< tweet user="AndrewYNg" id="788548053745569792" >}}
 
 Since, generally speaking, a normal person can distinguish an ad from a non-ad in less than one second, it makes sense to explore how we can harness AI to help the filter list community.
 

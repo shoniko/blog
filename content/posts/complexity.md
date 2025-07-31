@@ -20,7 +20,7 @@ For example, when a swarm of bees sets out to move somewhere only roughly [5% of
 
 Swarm intelligence is curious because it is more than just a wisdom of the smartest individuals. It produces behaviors no single individual is capable of. It is hard to get started, but is very resilient once it is has started.
 
-{{< tweet 1256204397672980480 >}}
+{{< tweet id="1256204397672980480" >}}
 
 ## Organizations
 
