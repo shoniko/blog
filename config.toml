@@ -27,10 +27,10 @@ publishDir = "public"
   # Categories are disabled by default.
 
 [params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04 -0700"
+  [params.dateform]
+    ShortDate   = "Jan 2"
+    NumDateShort = "2006-01-02"
+    NumDateLong  = "2006-01-02 15:04 -0700"
 
   # Metadata mostly used in document's head
   # description = ""
