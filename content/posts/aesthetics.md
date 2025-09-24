@@ -40,9 +40,11 @@ That’s why glimmers matter. They’re not just little sparks — they’re pre
 
 Attention, in this sense, is an art form. What we notice — what we let through the gate of perception — decides the futures available to us.  
 
+I created a small [self-assessment quiz](https://shoniko.com/pages/aesthetics_quiz.html) to systematise aesthetic leanings and thus potentially learn something about our future selfs. This self-knowledge is particularly interesting since it allows modeling aesthetic archetypes using LLM-based agents later on.
+
 ---
 
 ## Where This Leaves Us  
 There’s no finite catalog of archetypes or experiences. Culture keeps inventing new ones, from digital glitch art to minimalist white cubes to absurdist memes. The question is less “what’s beautiful?” and more “what beauty do you allow to matter enough to shape you?”  
 
-Because every time you follow a glimmer, you’re not just choosing an experience. You’re sketching out the person you might yet become.  
+Because every time you follow a glimmer, you’re not just choosing an experience. You’re sketching out the person you might yet become.
