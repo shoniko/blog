@@ -1,0 +1,18 @@
+{{ $user := .Get "user" }}
+{{ $id := .Get "id" }}
+
+{{ if and $user $id }}
+  {{ $url := printf "https://twitter.com/%s/status/%s" $user $id }}
+  <blockquote class="twitter-tweet" data-lang="en">
+    <a href="{{ $url }}"></a>
+  </blockquote>
+{{ else if $id }}
+  {{ $url := printf "https://twitter.com/i/status/%s" $id }}
+  <blockquote class="twitter-tweet" data-lang="en">
+    <a href="{{ $url }}"></a>
+  </blockquote>
+{{ else }}
+  {{ errorf "tweet shortcode requires at least an 'id' parameter" }}
+{{ end }}
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> 
