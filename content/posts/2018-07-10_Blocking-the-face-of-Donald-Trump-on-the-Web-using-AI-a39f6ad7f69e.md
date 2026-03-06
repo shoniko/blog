@@ -4,6 +4,7 @@ description: >-
   Recently my employer Adblock Plus was having an annual Summer Team Week. Being
   a mostly distributed company it is a great opportunity to…
 date: '2018-07-10T19:39:29.648Z'
+draft: true
 categories: []
 keywords: []
 slug: /@shoniko/blocking-the-face-of-donald-trump-on-the-web-using-ai-a39f6ad7f69e
