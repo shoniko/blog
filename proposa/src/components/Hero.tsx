@@ -1,6 +1,8 @@
 'use client'
 
 import Link from 'next/link'
+import WaitlistForm from './WaitlistForm'
+import { trackLandingAction } from '@/lib/signals'
 
 export default function Hero() {
   return (
@@ -25,18 +27,25 @@ export default function Hero() {
           <div className="mt-10 flex items-center justify-center gap-4">
             <Link
               href="/app"
+              onClick={() => trackLandingAction('cta_hero')}
               className="rounded-lg bg-indigo-500 px-6 py-3 text-base font-semibold text-white shadow-lg shadow-indigo-500/30 transition hover:bg-indigo-400 hover:shadow-indigo-400/30"
             >
               Try it free
             </Link>
             <a
               href="#pricing"
+              onClick={() => trackLandingAction('cta_pricing')}
               className="rounded-lg border border-slate-600 px-6 py-3 text-base font-semibold text-slate-300 transition hover:border-slate-500 hover:text-white"
             >
               View pricing
             </a>
           </div>
           <p className="mt-4 text-sm text-slate-500">No credit card required. 5 free proposals.</p>
+
+          <div className="mx-auto mt-10 max-w-md">
+            <p className="mb-3 text-sm text-slate-400">Or join the waitlist for launch updates:</p>
+            <WaitlistForm source="hero" compact />
+          </div>
         </div>
       </div>
     </section>

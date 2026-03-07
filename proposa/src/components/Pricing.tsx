@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { trackLandingAction } from '@/lib/signals'
 
 const tiers = [
   {
@@ -123,6 +124,7 @@ export default function Pricing() {
               </ul>
               <Link
                 href="/app"
+                onClick={() => trackLandingAction('pricing_tier_click', tier.name)}
                 className={`mt-8 block rounded-lg py-3 text-center text-sm font-semibold transition ${
                   tier.highlighted
                     ? 'bg-white text-indigo-600 hover:bg-indigo-50'

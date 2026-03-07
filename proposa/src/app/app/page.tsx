@@ -1,10 +1,11 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import CompanyForm, { CompanyProfile } from '@/components/CompanyForm'
 import BriefForm, { ClientBrief } from '@/components/BriefForm'
 import ProposalView from '@/components/ProposalView'
+import { trackCompanyProfile, trackBriefSubmitted, trackStepView, useStepTimer } from '@/lib/signals'
 
 type Step = 'company' | 'brief' | 'proposal'
 
@@ -15,13 +16,27 @@ export default function AppPage() {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState('')
 
+  useStepTimer(step)
+
+  useEffect(() => {
+    trackStepView(step)
+  }, [step])
+
   const handleCompanySubmit = (profile: CompanyProfile) => {
+    trackCompanyProfile(profile)
     setCompanyProfile(profile)
     setStep('brief')
   }
 
   const handleBriefSubmit = async (brief: ClientBrief) => {
     if (!companyProfile) return
+
+    trackBriefSubmitted({
+      clientName: brief.clientName,
+      briefLength: brief.briefText.length,
+      budget: brief.budget,
+      hasDeadline: !!brief.deadline,
+    })
 
     setStep('proposal')
     setIsLoading(true)

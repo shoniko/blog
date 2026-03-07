@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { trackProposalAction } from '@/lib/signals'
 
 interface Props {
   proposal: string
@@ -16,19 +17,26 @@ export default function ProposalView({ proposal, isLoading, onBack, onReset }: P
 
   const displayText = isEditing ? editedProposal : proposal
 
+  const getTextWithWatermark = (text: string) => {
+    return text + '\n\n---\n*Generated with Proposa — proposa.eu*'
+  }
+
   const handleCopy = async () => {
-    await navigator.clipboard.writeText(displayText)
+    trackProposalAction('copy')
+    await navigator.clipboard.writeText(getTextWithWatermark(displayText))
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
   }
 
   const handleEdit = () => {
+    trackProposalAction('edit')
     setEditedProposal(proposal)
     setIsEditing(true)
   }
 
   const handleDownload = () => {
-    const blob = new Blob([displayText], { type: 'text/markdown' })
+    trackProposalAction('download')
+    const blob = new Blob([getTextWithWatermark(displayText)], { type: 'text/markdown' })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
     a.href = url
@@ -116,6 +124,9 @@ export default function ProposalView({ proposal, isLoading, onBack, onReset }: P
               return <p key={i} className="text-slate-700">{line}</p>
             })}
           </div>
+          <div className="mt-8 border-t border-slate-200 pt-4 text-center text-xs text-slate-400">
+            Generated with <a href="https://proposa.eu" className="text-indigo-500 hover:text-indigo-600">Proposa</a> — AI-powered proposals for European service businesses
+          </div>
         </div>
       )}
 
@@ -127,7 +138,7 @@ export default function ProposalView({ proposal, isLoading, onBack, onReset }: P
           Edit brief
         </button>
         <button
-          onClick={onReset}
+          onClick={() => { trackProposalAction('new_proposal'); onReset() }}
           className="rounded-lg bg-indigo-600 px-6 py-3 text-base font-semibold text-white transition hover:bg-indigo-500"
         >
           New proposal
