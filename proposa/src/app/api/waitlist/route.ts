@@ -1,15 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { promises as fs } from 'fs'
-import path from 'path'
-
-const WAITLIST_FILE = path.join(process.cwd(), 'waitlist.json')
-
-interface WaitlistEntry {
-  email: string
-  feature: string
-  timestamp: string
-  source: string
-}
+import { supabase, isSupabaseConfigured } from '@/lib/supabase'
 
 export async function POST(request: NextRequest) {
   try {
@@ -20,29 +10,31 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Valid email required' }, { status: 400 })
     }
 
-    const entry: WaitlistEntry = {
-      email,
-      feature: feature || '',
-      timestamp: new Date().toISOString(),
-      source: source || 'landing',
+    if (!isSupabaseConfigured()) {
+      console.log('Waitlist signup (no DB):', email, feature, source)
+      return NextResponse.json({ ok: true, count: 0 })
     }
 
-    let existing: WaitlistEntry[] = []
-    try {
-      const data = await fs.readFile(WAITLIST_FILE, 'utf-8')
-      existing = JSON.parse(data)
-    } catch {
-      existing = []
-    }
+    // Upsert — if email already exists, update feature/source
+    const { error } = await supabase.from('waitlist').upsert(
+      {
+        email,
+        feature: feature || null,
+        source: source || 'landing',
+      },
+      { onConflict: 'email' }
+    )
 
-    // Deduplicate by email
-    if (!existing.some((e) => e.email === email)) {
-      existing.push(entry)
-      await fs.writeFile(WAITLIST_FILE, JSON.stringify(existing, null, 2))
-    }
+    if (error) throw error
 
-    return NextResponse.json({ ok: true, count: existing.length })
-  } catch {
+    // Get total count
+    const { count } = await supabase
+      .from('waitlist')
+      .select('id', { count: 'exact', head: true })
+
+    return NextResponse.json({ ok: true, count: count || 0 })
+  } catch (err) {
+    console.error('Waitlist error:', err)
     return NextResponse.json({ error: 'Failed to join waitlist' }, { status: 500 })
   }
 }

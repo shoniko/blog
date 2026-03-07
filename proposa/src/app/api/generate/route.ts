@@ -1,5 +1,6 @@
 import Anthropic from '@anthropic-ai/sdk'
 import { NextRequest, NextResponse } from 'next/server'
+import { supabase, isSupabaseConfigured } from '@/lib/supabase'
 
 const SYSTEM_PROMPT = `You are Proposa, an expert B2B proposal writer for European service businesses. You generate professional, persuasive proposals that win deals.
 
@@ -30,13 +31,14 @@ export async function POST(request: NextRequest) {
     const body = await request.json()
     const { companyProfile, clientBrief } = body
 
+    const sessionId = request.headers.get('x-session-id') || 'unknown'
+
     const apiKey = process.env.ANTHROPIC_API_KEY
     if (!apiKey) {
+      const fallback = generateFallbackProposal(companyProfile, clientBrief)
+      await saveProposal(sessionId, companyProfile, clientBrief, fallback, 'template')
       return NextResponse.json(
-        {
-          proposal: generateFallbackProposal(companyProfile, clientBrief),
-          source: 'template',
-        },
+        { proposal: fallback, source: 'template' },
         { status: 200 }
       )
     }
@@ -82,6 +84,8 @@ Generate the full proposal now in ${companyProfile.language}. Use Markdown forma
       .map((block) => block.text)
       .join('\n')
 
+    await saveProposal(sessionId, companyProfile, clientBrief, proposal, 'ai')
+
     return NextResponse.json({ proposal, source: 'ai' })
   } catch (error) {
     console.error('Generation error:', error)
@@ -89,6 +93,35 @@ Generate the full proposal now in ${companyProfile.language}. Use Markdown forma
       { error: 'Failed to generate proposal. Please try again.' },
       { status: 500 }
     )
+  }
+}
+
+async function saveProposal(
+  sessionId: string,
+  company: { companyName: string; industry: string; services: string; tone: string; language: string },
+  brief: { clientName: string; briefText: string; budget: string; deadline: string },
+  proposalText: string,
+  source: string
+) {
+  if (!isSupabaseConfigured()) return
+
+  try {
+    await supabase.from('proposals').insert({
+      session_id: sessionId,
+      company_name: company.companyName,
+      industry: company.industry,
+      services: company.services,
+      tone: company.tone,
+      language: company.language,
+      client_name: brief.clientName,
+      brief_text: brief.briefText,
+      budget: brief.budget || null,
+      deadline: brief.deadline || null,
+      proposal_text: proposalText,
+      source,
+    })
+  } catch (err) {
+    console.error('Failed to save proposal:', err)
   }
 }
 

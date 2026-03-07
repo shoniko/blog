@@ -43,9 +43,13 @@ export default function AppPage() {
     setError('')
 
     try {
+      const sessionId = sessionStorage.getItem('proposa_session') || ''
       const response = await fetch('/api/generate', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          'x-session-id': sessionId,
+        },
         body: JSON.stringify({ companyProfile, clientBrief: brief }),
       })
 
