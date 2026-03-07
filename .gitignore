@@ -1,3 +1,6 @@
 public/
 docs/
-resources/
+resources/proposa/node_modules/
+proposa/.next/
+proposa/.env
+proposa/.env.local
